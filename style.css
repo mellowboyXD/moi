@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	color: #eee;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+body {
+	background-color: #111;
+	padding: 8px;
+}
+
+a {
+	color: #00f;
+}
+
+a:hover {
+	background-color: #88888833;
+}
+
+h1 {
+	font-size: 2.0em;
+	text-decoration: underline;
+}
+
+h2 {
+	font-size: 1.5em;
+	position: relative;
+}
+
+h2:hover::after {
+	content: "#";
+	position: absolute;
+	opacity: 0.2;
+	display: inline;
+}
+
+em {
+	font-size: 1.2em;
+	color: #ccc;
+}
+
+p.drop:first-letter {
+	color: yellow;
+	font-size: 1.45em;
+	margin-right: 3px;
+}
+
+small {
+	font-size: 0.8em;
+}
+
+date, date > * {
+	padding: 0;
+	margin:0;
+	line-height: 0;
+	font-size: 0.9em;
+	opacity: 0.8;
+}
+
+date::before {
+	content: "Date:";
+	position: abtolute;
+	left: 0;
+	margin-right: 10px;
+}
